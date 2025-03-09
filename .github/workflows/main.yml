@@ -45,22 +45,22 @@ jobs:
     # Paso 5: Crear un cliente de prueba
     - name: Crear cliente de prueba
       run: |
-        python gestor_clientes.py crear "ClientePrueba" "Av. Ejemplo 123" "555-1234" "TV Básico"
+        python gestor_clientes.py crear "IvanZarate" "juan rulfo 123" "33-33-45-45-46" "internet"
     
     # Paso 6: Verificar que el cliente se creó correctamente
     - name: Verificar cliente creado
       run: |
-        python gestor_clientes.py ver "ClientePrueba"
+        python gestor_clientes.py ver "IvanZarate"
     
     # Paso 7: Agregar un servicio adicional al cliente
     - name: Agregar servicio al cliente
       run: |
-        python gestor_clientes.py agregar "ClientePrueba" "Internet 100MB"
+        python gestor_clientes.py agregar "IvanZarate" "Internet 1000MB"
     
     # Paso 8: Verificar que el servicio se agregó correctamente
     - name: Verificar servicio agregado
       run: |
-        python gestor_clientes.py ver "ClientePrueba"
+        python gestor_clientes.py ver "IvanZarate"
     
     # Paso 9: Listar clientes nuevamente para ver el cliente añadido
     - name: Listar clientes actualizados
